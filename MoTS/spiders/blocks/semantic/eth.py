@@ -4,12 +4,12 @@ from collections import AsyncGenerator, Iterator
 
 import scrapy
 
-from MotTS.items.block import TransactionMotifItem, ExternalTransactionItem, \
+from MoTS.items.block import TransactionMotifItem, ExternalTransactionItem, \
     InternalTransactionItem, ERC20TokenTransferItem, ERC721TokenTransferItem, ERC1155TokenTransferItem
-from MotTS.spiders.blocks.eth import BlocksETHSpider
-from MotTS.strategies.blocks import BLOCK_MOTIF_COUNTER
-from MotTS.tasks.synchronize import SyncMotifCounterTask
-from MotTS.utils.enum import ETHDataTypes
+from MoTS.spiders.blocks.eth import BlocksETHSpider
+from MoTS.strategies.blocks import BLOCK_MOTIF_COUNTER
+from MoTS.tasks.synchronize import SyncMotifCounterTask
+from MoTS.utils.enum import ETHDataTypes
 
 
 class BlocksSemanticETHSpider(BlocksETHSpider):

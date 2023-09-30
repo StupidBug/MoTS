@@ -4,10 +4,10 @@ import logging
 import scrapy
 from scrapy.utils.misc import load_object
 
-from MotTS import settings
-from MotTS.items import InternalTransactionItem, BlockNumberItem
-from MotTS.spiders.blocks.semantic.eth import BlocksSemanticETHSpider
-from MotTS.utils.url import QueryURLBuilder
+from MoTS import settings
+from MoTS.items import InternalTransactionItem, BlockNumberItem
+from MoTS.spiders.blocks.semantic.eth import BlocksSemanticETHSpider
+from MoTS.utils.url import QueryURLBuilder
 
 
 class BlocksSemanticETH2Spider(BlocksSemanticETHSpider):

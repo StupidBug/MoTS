@@ -4,7 +4,7 @@ import time
 
 from twisted.internet.defer import DeferredLock
 
-from MotTS import settings
+from MoTS import settings
 
 
 class APIKeyBucket:
